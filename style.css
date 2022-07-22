@@ -23,7 +23,7 @@ html{
 
 body{
   background-image: linear-gradient(
-    180deg,
+    206deg,
     #e9c5c2 0%, 
     #e9c5c2 50%,
     #732F29 50%,
@@ -39,7 +39,7 @@ body{
 .nav {
   background-color: var(--cor2);
   padding: 2rem;
-  width: 5%;
+  width: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,13 +88,39 @@ body{
 }
 
 .icon {
+  background-color: var(--cor2);
+  border-radius: 50%;
   cursor: pointer;
+  border: 0;
+  position: relative;
+  width: 3rem;
+  height: 3rem;
 }
 
-.icon:hover {
-  background-color: var(--cor3);
+.icon:focus {
+  outline: 0;
 }
 
-.line {
+.icon .line {
   width: 2rem;
+  background-color: var(--white);
+  height: .2rem;
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: .5rem;
+  transition: transform 0.6s linear;
+}
+
+.icon .line2 {
+  top: auto;
+  bottom: 1rem;
+}
+
+.nav.active .icon .line1 {
+  transform: rotate(-765deg) translateY(.55rem);
+}
+
+.nav.active .icon .line2 {
+  transform: rotate(765deg) translateY(-.55rem);
 }
