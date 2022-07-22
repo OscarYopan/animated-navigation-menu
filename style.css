@@ -1,0 +1,57 @@
+/*Reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Default*/
+:root {
+  --cor1: #023059;
+  --cor2: #022E40;
+  --cor3: #F23C13;
+  --cor4: #BF3124;
+  --cor5: #732F29;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+body{
+  background-image: linear-gradient(
+    180deg,
+    #e9c5c2 0%, 
+    #e9c5c2 50%,
+    #732F29 50%,
+    #732F29 100%    
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.nav {
+  background-color: var(--cor2);
+  padding: 2rem;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  box-shadow: 0, .2rem, .5rem rgb(0, 0, 0, 0.3);
+}
+
+.nav.active {
+  width: 35rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--cor4);
+}
